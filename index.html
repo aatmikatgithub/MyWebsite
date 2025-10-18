@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>MY WEBPAGE!</title>
-<link rel="icon" type="image/jpg" href="file:///C:/html2/favicon.webp">
+<link rel="icon" type="image/webp" href="favicon.webp">
 <style>
 button {
   font-size: 16px;
@@ -17,14 +17,12 @@ button {
 button:hover {
   background-color: #00ff44;
 }
-
 .video-container {
   position: relative; 
   width: 600px;
   height: 300px;
   margin: 20px auto;
 }
-
 video {
   width: 100%;
   height: 100%;
@@ -32,7 +30,6 @@ video {
   border-radius: 10px;
   display: block;
 }
-
 .play-btn {
   position: absolute;
   top: 50%;
@@ -44,7 +41,6 @@ video {
   pointer-events: none;  
   transition: opacity 0.3s ease;
 }
-
 .video-container:hover .play-btn {
   opacity: 1;
   pointer-events: auto; 
@@ -61,41 +57,35 @@ video {
 </a>
 <hr>
 <h1>This Is Madara Uchiha!</h1>
-<a href="https://en.wikipedia.org/wiki/Madara_Uchiha" target="_blank" 
-title="Opens Madara Uchiha Wikipedia Page.">
+<a href="https://en.wikipedia.org/wiki/Madara_Uchiha" target="_blank" title="Opens Madara Uchiha Wikipedia Page.">
 <img src="https://cdn.shopify.com/s/files/1/0785/4004/6646/files/39349af71e44acd05f7ff09cf78eed5d_480x480.jpg?v=1727177811" height="300" width="200" alt="This Is a Picture Of Madara Uchiha!">
 </a><br><hr>
 
 <h2>My Favourite Phonk!</h2>
 <audio id="bgmusic" controls loop>
-  <source src="C:\html2\FUNK SIGILO SLOWED.mp3" type="audio/mpeg">
+  <source src="https://aatmikatgithub.github.io/MyWebsite/FUNK%20SIGILO%20SLOWED.mp3" type="audio/mpeg">
 </audio>
 <hr>
 
 <h2>One Of My Donation Videos!</h2>
 <div class="video-container">
   <video id="myVideo" preload="metadata" controls>
-    <source src="C:\html2\VID2.mp4" type="video/mp4">
+    <source src="https://aatmikatgithub.github.io/MyWebsite/VID2%20(1).mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <button class="play-btn" onclick="playVideo()"> ▶</button>
+  <button class="play-btn" onclick="playVideo()">▶</button>
 </div>
 
 <script>
   const video = document.getElementById("myVideo");
   const playButton = document.querySelector(".play-btn");
-
   function playVideo() {
     video.play();
   }
-
-  // Hide play button when video plays
   video.addEventListener("play", () => {
     playButton.style.opacity = "0";
     playButton.style.pointerEvents = "none";
   });
-
-  // Show again when paused
   video.addEventListener("pause", () => {
     playButton.style.opacity = "1";
     playButton.style.pointerEvents = "auto";
